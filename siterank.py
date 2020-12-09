@@ -1,4 +1,5 @@
 import requests
+import json
 
 def getRank(site, toSearch='"global"'):
   html = requests.get('https://www.alexa.com/siteinfo/'+site)
@@ -9,4 +10,7 @@ def getRank(site, toSearch='"global"'):
   script = html.find(toSearch)
 
   #print("Script:")
-  return html[script:script+12]
+  toParse = html[script:script+20].replace("\n", "")
+  parsed = toParse.replace(" ", "")
+    
+  return parsed
