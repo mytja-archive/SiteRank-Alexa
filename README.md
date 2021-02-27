@@ -6,6 +6,9 @@ It is ultra customizable.
 # Installation
 You can use `pip install alexa-siterank` or `pip install git+https://github.com/mytja/SiteRank-Alexa`
 
+# ⚡️ Wanna try out [new OTR function](https://github.com/mytja/SiteRank-Alexa/blob/main/md_files/OTR.md)! It is up to 5 times faster than current functions
+# ⚡️ Wanna try out [new asynchronous function](https://github.com/mytja/SiteRank-Alexa/blob/main/md_files/async.md)! It requires httpx
+
 # Usage
 
 ## Get PageRank
