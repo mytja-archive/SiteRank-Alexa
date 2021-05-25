@@ -1,4 +1,4 @@
-name: Upload Python Package
+name: Test with Python 3.6
 
 on:
   push:
@@ -16,6 +16,8 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.6'
+    - name: Install dependencies
+      run: python -m pip install -r testrequirements.txt
     - name: Test asynchronous function
       run: python asynctest.py
     - name: Test OTR function
