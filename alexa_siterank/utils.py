@@ -1,9 +1,13 @@
-import requests
+try:
+    import httpx
+except:
+    raise Exception("You must install httpx in order to this library")
+
 import json
 
 class Utils:
     def getSite(self, website):
-        r = requests.get("https://alexa.com/siteinfo/"+website)
+        r = httpx.get("https://alexa.com/siteinfo/"+website)
         return r.text
 
     def getInfo(self, website):

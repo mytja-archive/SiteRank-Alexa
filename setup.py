@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="alexa-siterank", # Replace with your own username
-    version="1.0.1",
+    version="1.0.2",
     author="mytja",
     description="Get siterank & other data from Alexa Web Information Service",
     long_description=long_description,
@@ -18,7 +18,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        'requests',
+        'httpx',
     ],
     python_requires='>=3',
 )
