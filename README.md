@@ -1,3 +1,5 @@
+## Alexa is being [retired](https://support.alexa.com/hc/en-us/articles/4410503838999) as of May, 1st 2022. This library is most likely not going to work after that date. That's why I decided to retire this library and archive it. Anybody who uses this library, please remove it from your code.
+
 # SiteRank-Alexa
 This is vanilla Python library for gathering data about website ranks from Alexa!
 
